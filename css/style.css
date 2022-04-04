@@ -4,6 +4,10 @@
 * ICS2O-Unit2-01-HTML-JS-HelloWorld
 */
 
+body {
+	background-color:	lavender;
+}
+
 p {
   padding: 30px;
 }

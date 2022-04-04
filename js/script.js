@@ -10,8 +10,10 @@
  */
 function calculate () {
   // input
-  let sideA = parseFloat(document.getElementById('base-1-of-trapezoid').value)
-  let sideB = parseFloat(document.getElementById('base-2-of-trapezoid').value)
+  let sideA = parseFloat(document.getElementById('side-a-of-trapezoid').value)
+  
+  let sideB = parseFloat(document.getElementById('side-b-of-trapezoid').value)
+  
   let height = parseFloat(document.getElementById('height-of-trapezoid').value)
   
   // process
