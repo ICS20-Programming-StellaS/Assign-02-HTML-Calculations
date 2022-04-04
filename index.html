@@ -28,7 +28,7 @@
         <table>
           <tr>
             <th>
-              <img src="./image/A_P_Trapezoid.jpg" alt="Trapezoid" width="95%" height="auto"/>
+              <img src="./image/A_P_Trapezoid.jpg" alt="Trapezoid" width="100%" height="auto"/>
             </th>
             <th>
               <center><h4>Formula for area of a Trapezoid <div><h5>*Use the image as a reference*</h5></div></h4></center>
@@ -69,6 +69,36 @@
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form></center>
+
+        <!-- Simple Textfield -->
+        <center><form action="#">
+          <p>Side c</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="side-c-of-trapezoid"
+            />
+            <label class="mdl-textfield__label" for="base-1-of-trapezoid">Side c ...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form></center>
+        
+        <!-- Simple Textfield -->
+        <center><form action="#">
+          <p>Side d</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="side-d-of-trapezoid"
+            />
+           <label class="mdl-textfield__label" for="base-2-of-trapezoid">Side d ...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form></center>
 				
         <!-- Numeric Textfield -->
         <center><form action="#">
@@ -90,12 +120,12 @@
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="calculate()"
         >
-          Area
+          Calculate
         </button>
         </br>
         <center><p>
           <div id="area"></div>
-        </p></center>
+          <div id="perimeter"></div>
       </main>
     </div>
   </center></body>
