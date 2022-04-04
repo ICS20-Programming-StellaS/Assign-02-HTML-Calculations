@@ -1,21 +1,22 @@
 // Copyright (c) 2022 Stella S All rights reserved
 //
 // Created by: Stella S
-// Created on: March 2022
+// Created on: April 2022
 // This file contains the JS functions for index.html
 
 'use strict'
 /**
- * This function calculates area of a trapazoid.
+ * This function calculates area of triangle.
  */
 function calculate () {
   // input
-  let side a = parseFloat(document.getElementById('side-a-trapazoid').value)
-  let side b = paseFloat(document.getElementId('side-b-trapazoid')
+  let sideA = parseFloat(document.getElementById('base-1-of-trapezoid').value)
+  let sideB = parseFloat(document.getElementById('base-2-of-trapezoid').value)
+  let height = parseFloat(document.getElementById('height-of-trapezoid').value)
   
   // process
-  let area = (a+b) * height/2
-
+  const area = (sideA + sideB) * height/2
+  
   // output
-  document.getElementById('area').innerHTML = 'The area of the triangle is: ' + area + ' cm²'
+  document.getElementById('area').innerHTML = 'The area of the trapezoid is: ' + area.toFixed(2) + ' cm²'
 }

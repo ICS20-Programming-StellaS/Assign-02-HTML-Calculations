@@ -6,14 +6,14 @@
     <meta name="keywords" content="immaculata, ics2o" />
     <meta name="author" content="Stella S" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png" />
     <link rel="manifest" href="./fav_index/site.webmanifest" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-red.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Area and Perimeter of a Trapazoid</title>
+    <title>Area and Perimeter of a Trapezoid, with JavaScript</title>
   </head>
   <center><body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -21,24 +21,25 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Area and Perimeter of a Trapazoid</span> 
+          <span class="mdl-layout-title">Area and Perimeter of a Trapezoid, with JS</span> 
         </div>
       </header>
       <main class="mdl-layout__content">
         <table>
           <tr>
             <th>
-              <img src="./image/A_P_Trapazoid.jpg" alt="Triangle" width="95%" height="auto"/>
+              <img src="./image/A_P_Trapezoid.jpg" alt="Trapezoid" width="95%" height="auto"/>
             </th>
             <th>
-              <center><h4>Formula for Area and Perimeter of a Trapazoid</h4><div><p>*Please use image as a reference*</p></div></center>
-              <h4>A=1/2 (a+b)h</h4>
-              <h4>P=a+b+c+d</h4>
+              <center><h3>Formula for area of a Trapezoid <div><h5>*Use the image as a reference*</h5></div></h3></center>
+              <h4>A = 1/2 (a+b)h</h4>
             </th>
           </tr>
         </table>
+
+        <p>Calculate the Area of a Trapezoid</p>
         
-        <!-- Side A of Trapazoid -->
+        <!-- Simple Textfield -->
         <center><form action="#">
           <p>Side a</p>
           <div class="mdl-textfield mdl-js-textfield">
@@ -46,14 +47,14 @@
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="side-a-trapazoid"
+              id="base-1-of-trapezoid"
             />
-            <label class="mdl-textfield__label" for="length-of-rectangle">Base ...</label>
+            <label class="mdl-textfield__label" for="base-1-of-trapezoid">Base 1 ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form></center>
-				
-        <!-- Side B of Trapazoid -->
+        
+        <!-- Simple Textfield -->
         <center><form action="#">
           <p>Side b</p>
           <div class="mdl-textfield mdl-js-textfield">
@@ -61,54 +62,24 @@
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="side-b-trapazoid"
+              id="base-2-of-trapezoid"
             />
-            <label class="mdl-textfield__label" for="width-of-rectangle">Height ...</label>
+           <label class="mdl-textfield__label" for="base-2-of-trapezoid">Base 2 ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form></center>
-            
-        <!-- Side C of Trapazoid -->
+				
+        <!-- Numeric Textfield -->
         <center><form action="#">
-          <p>Side c</p>
+          <p>Height</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="side-c-trapazoid"
+              id="height-of-trapezoid"
             />
-            <label class="mdl-textfield__label" for="width-of-rectangle">Height ...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form></center>
-        
-        <!-- Side D of Trapazoid -->
-        <center><form action="#">
-          <p>Side d</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="side-d-trapazoid"
-            />
-            <label class="mdl-textfield__label" for="width-of-rectangle">Height ...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form></center>
-        
-        <!-- Height of Trapazoid -->
-        <center><form action="#">
-          <p>Height of Trapazoid</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="height-of-trapazoid"
-            />
-            <label class="mdl-textfield__label" for="width-of-rectangle">Height ...</label>
+            <label class="mdl-textfield__label" for="height-of-trapezoid">Height ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form></center>
@@ -120,11 +91,9 @@
         >
           Calculate
         </button></center>
-        <br />
+        </br>
         <center><p>
-          <div id="answers">
-            <div id="area"></div>
-          </div>
+          <div id="area"></div>
         </p></center>
       </main>
     </div>
